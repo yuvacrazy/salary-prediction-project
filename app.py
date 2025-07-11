@@ -29,7 +29,7 @@ X_input = np.array([[age, education_encoded, occupation_encoded, hours, gender_e
     capital_loss]])
 
 # Predict
-prediction = model.predict(X_input)[8]
+prediction = model.predict(X_input)[0]
 
 st.subheader("📊 Predicted Salary Class:")
 st.success(">50K" if prediction == 1 else "≤50K")
